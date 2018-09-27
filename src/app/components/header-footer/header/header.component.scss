@@ -1,0 +1,62 @@
+@import "../../../../assets/sass/variables";
+
+header {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: $header-bm;
+  color: $header-color;
+  background-color: $header-bg-color;
+}
+
+header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.logo,
+nav {
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+}
+
+.container > li {
+  flex: 1;
+}
+
+@media all and (max-width: 600px) {
+
+  .container, .header {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .container > li {
+    flex-basis: 50%;
+  }
+
+  .header .logo {
+    flex-basis: 50%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .container > li {
+    flex-basis: 100%;
+  }
+
+  .header .logo {
+    flex-basis: 100%;
+  }
+}

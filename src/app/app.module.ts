@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WelcomeGridComponent } from './components/grids/welcome-grid/welcome-grid.component';
+import { HeaderComponent } from './components/header-footer/header/header.component';
+import { MondrianGridComponent } from './components/grids/mondrian-grid/mondrian-grid.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeGridComponent
+    WelcomeGridComponent,
+    HeaderComponent,
+    MondrianGridComponent
   ],
   imports: [
     BrowserModule

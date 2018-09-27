@@ -1,6 +1,8 @@
+@import "../../../../assets/sass/variables";
+
 .wrapper {
   display: grid;
-grid-gap: 10px;
+  grid-gap: $grid-gap;
   grid-template-columns: [col1-start] 100px  [col2-start] 100px  [col3-start] 100px [col3-end];
   grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
   background-color: #fff;
@@ -32,3 +34,36 @@ grid-gap: 10px;
   grid-column: col2-start ;
   grid-row: row2-start ;
 }
+
+// https://www.youtube.com/watch?v=qNtJ5p3h2A4
+// mondrian grid
+//  ul {
+//    display: grid;
+//    // this let's the browser determine how many columns to make, based off 80px
+//    grid-template-columns: repeat(auto-fit, minmax(80, fr));
+//    // figure out how many rows to make, based off 80px
+//    grid-auto-rows: 80px;
+//    // browser will re-arrange the order of content, in order to backfill spaces that content fits
+//    grid-auto-flow: dense;
+//    grid-gap: 1em;
+//    margin: 1em;
+//  }
+
+//  // fourth item spans 6 columns
+//  li :nth-child(4) {
+//   grid-row: span 6;
+//   background-color: red;
+//  }
+
+//  // fifth item spans 2 columns
+//  li :nth-child(5) {
+//   grid-row: span 2;
+//   background-color: blue;
+//  }
+
+//  // sixth item spans 4 columns
+//  li :nth-child(6) {
+//   grid-row: span 4;
+//   background-color: yellow;
+//  }
+
