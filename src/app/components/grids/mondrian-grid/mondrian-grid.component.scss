@@ -41,7 +41,7 @@ ul {
   grid-auto-rows: 200px;
   // browser will re-arrange the order of content, in order to backfill spaces that content fits
   grid-auto-flow: dense;
-  grid-gap: 1em;
+  grid-gap: 2px;
   margin: 1em; }
 
 li.highlight-box {
